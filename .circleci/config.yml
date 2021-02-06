@@ -11,7 +11,7 @@ jobs:
     - run:
         name: Run django tests
         command: |
-            pipenv run python ~./martor_demo/manage.py test
+            pipenv run python ./martor_demo/manage.py test
     - store_test_results:
         path: test-results
     - store_artifacts:
